@@ -12,6 +12,7 @@ const StyledSubNav = styled(Link)`
   margin: 0 15px;
   text-align: center;
   padding: 20px 0;
+  transition: .5s all;
 
   &:hover {
     color: #0070c9;

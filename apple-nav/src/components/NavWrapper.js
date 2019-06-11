@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import SubNav from "./SubNav";
 import styled from "styled-components";
 
-const StyledHeader = styled.div`
+const StyledNav = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,15 +22,22 @@ const StyledSubNav = styled.div`
   max-height: 100px;
 `;
 
+const StyledLogo = styled.img`
+    position: relative;
+    top: 3px;
+    margin: 0 30px 0 0;
+`;
+
 class NavWrapper extends React.Component {
   render() {
     return (
       <>
-        <StyledHeader>
+        <StyledNav>
+            <a href="/"><StyledLogo src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg" alt="Apple"/></a>
           {navData.map(item => (
             <Nav key={item.id} menu={item} />
           ))}
-        </StyledHeader>
+        </StyledNav>
 
         <StyledSubNav>
           {navData.map(item => (

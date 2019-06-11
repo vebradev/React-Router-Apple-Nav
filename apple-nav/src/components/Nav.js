@@ -5,11 +5,11 @@ import styled from "styled-components";
 const StyledNav = styled(NavLink)`
   color: #fff;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 35px;
+  transition: 0.5s all;
 
   &:hover {
     opacity: 0.6;
-    transition: 0.4s all;
   }
 `;
 
