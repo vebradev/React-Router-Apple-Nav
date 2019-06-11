@@ -22,9 +22,9 @@ const StyledSubNav = styled.div`
 `;
 
 const StyledLogo = styled.img`
-    position: relative;
-    top: 3px;
-    margin: 0 30px 0 0;
+  position: relative;
+  top: 3px;
+  margin: 0 30px 0 0;
 `;
 
 class NavWrapper extends React.Component {
@@ -32,7 +32,12 @@ class NavWrapper extends React.Component {
     return (
       <>
         <StyledNav>
-            <a href="/"><StyledLogo src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg" alt="Apple"/></a>
+          <a href="/">
+            <StyledLogo
+              src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg"
+              alt="Apple"
+            />
+          </a>
           {navData.map(item => (
             <Nav key={item.id} menu={item} />
           ))}
