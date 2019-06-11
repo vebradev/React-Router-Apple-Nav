@@ -23,6 +23,11 @@ const StyledSubNav = styled(Link)`
       max-width: 48px;
       max-height: 54px;
   }
+
+  span {
+      font-size: 10px;
+      color: #ef5602;
+  }
 `;
 
 function SubNav(props) {
@@ -32,6 +37,7 @@ function SubNav(props) {
         <StyledSubNav key={item.id} to="#">
           <img src={item.imageUrl} alt={item.title}/>
           {item.title}
+          {!item.new ? null : <span>New</span>}
         </StyledSubNav>
       ))}
     </>

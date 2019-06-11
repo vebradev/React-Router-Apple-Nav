@@ -19,7 +19,6 @@ const StyledSubNav = styled.div`
   justify-content: center;
   align-items: baseline;
   background-color: rgba(242, 242, 242, 0.7);
-  max-height: 100px;
 `;
 
 const StyledLogo = styled.img`
