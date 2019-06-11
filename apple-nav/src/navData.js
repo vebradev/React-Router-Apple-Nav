@@ -385,10 +385,6 @@ const navData = [
       }
     ]
   },
-  {
-    id: 7,
-    title: "Support"
-  }
 ];
 
 export default navData;
