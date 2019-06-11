@@ -17,7 +17,7 @@ const StyledHeader = styled.div`
 const StyledSubNav = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   background-color: rgba(242, 242, 242, 0.7);
   max-height: 100px;
 `;
